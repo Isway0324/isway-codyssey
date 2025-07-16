@@ -1,9 +1,9 @@
 ## 1 cmd 실행
 
 ## 2 원하는 폴더로 이동
-
+'''
 cd "C:\Users\vestk\OneDrive\Desktop\Codyssey"
-
+'''
 
 ## 3 파이썬 실행
 
