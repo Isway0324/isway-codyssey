@@ -4,9 +4,11 @@ cd "C:\Users\vestk\OneDrive\Desktop\Codyssey"
 
 
 
+
 ### 파이썬 실행
 
 python
+
 
 
 
