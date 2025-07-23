@@ -1,27 +1,28 @@
 def main():
     try:
-        # 사용자로부터 숫자(실수) 입력
-        number_input = input("Enter number: ")
+        number_input = input("계산할 숫자를 입력하세요: ")
         number = float(number_input)
     except ValueError:
         print("Invalid number input.")
         return
 
     try:
-        # 사용자로부터 지수(정수) 입력
-        exponent_input = input("Enter exponent: ")
+        exponent_input = input("지수를 입력하세요: ")
         exponent = int(exponent_input)
     except ValueError:
         print("Invalid exponent input.")
         return
+    
+    if number == 0.0 and exponent < 0:
+        print("0의 음수 제곱은 정의되지 않습니다.")
+        return
+    
 
-    # 반복문으로 거듭제곱 계산
     result = 1.0
-    for _ in range(abs(exponent)):
+    for _ in range(abs(exponent)):      # 지수 절댓값
         result *= number
 
-    # 음수 지수 처리
-    if exponent < 0:
+    if exponent < 0:                    # 음의 지수 처리
         result = 1.0 / result
 
     print(f"Result: {result}")
