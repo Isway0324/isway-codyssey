@@ -1,5 +1,12 @@
 git config --global --list
 
-git config --global --editor
+code ~/.gitconfig
 
-git config --global core.editor "code --wait"
+git rev-parse --is-inside-work-tree
+
+
+
+
+git add .
+git commit -m "app.py 기능 수정 및 로그 추가"
+git push
