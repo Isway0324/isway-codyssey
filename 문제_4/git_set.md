@@ -1,12 +1,8 @@
 git config --global --list
 
-code ~/.gitconfig
-
-git rev-parse --is-inside-work-tree
-
-
+code congif --global -e
 
 
 git add .
-git commit -m "app.py 기능 수정 및 로그 추가"
+git commit -m "문제_4"
 git push

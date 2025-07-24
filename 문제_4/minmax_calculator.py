@@ -20,11 +20,18 @@ def maximum(a):
 def main():
     try:
         number_input = list(map(float, input("숫자를 입력해주세요: ").split()))
+        print(f"입력받은 숫자는 {number_input} 입니다")
+
+        if not number_input:                            # try 코드 안에서 예외 처리 하기
+            raise ValueError                            # Exception을 이용해서 예외 처리 해보기
+
+        min = minimum(number_input)
+        max = maximum(number_input)
+
     except ValueError:
         print("Invalid number input.")
         return
-
-    print(f"입력받은 숫자는 {number_input} 입니다")
+    
 
     min = minimum(number_input)
     max = maximum(number_input)
