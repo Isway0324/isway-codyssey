@@ -33,10 +33,6 @@ def main():
         return
     
 
-    min = minimum(number_input)
-    max = maximum(number_input)
-
-
     print(f"최소값: {min}, 최대값: {max}")
 
 
