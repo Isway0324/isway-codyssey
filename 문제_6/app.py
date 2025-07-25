@@ -27,5 +27,6 @@ git commit -m "Edit port"
 
 git log --oneline
 git reset --hard 5b5d28c
+git revent 5b5d28c --no-edit
 
 '''
