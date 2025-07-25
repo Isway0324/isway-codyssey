@@ -19,3 +19,13 @@ def home():
 
 if __name__ == '__main__':
     app.run('0.0.0.0', 80)
+
+
+'''
+git add app.py
+git commit -m "Edit port"
+
+git log --oneline
+git reset --hard 5b5d28c
+
+'''
