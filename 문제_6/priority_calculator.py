@@ -44,7 +44,7 @@ def list_devide(a):
 
 def calculate(a, b):
 
-    if b[0] == '*':
+    if b[0] == '*':                     ## 배열을 합치면 자동으로 줄어든다
         a[1] = multiply(a[0], a[1])
         a[0] = 0
         b[0] = '+'
@@ -75,7 +75,7 @@ def calculate(a, b):
 
 def main():
     try:
-        cal_input = list(input("계산할 식을 입력해주세요: ").split())
+        cal_input = list(input("계산할 식을 입력해주세요: ").split())       # list 대신 []
 
         number, operator = list_devide(cal_input)
     except ZeroDivisionError as e:
